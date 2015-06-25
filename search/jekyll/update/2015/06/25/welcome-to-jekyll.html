@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jekyll + lunrjs 测试站</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>Welcome to Jekyll!</title>
+  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
 
   <link rel="stylesheet" href="/help-doc/v001/css/main.css">
-  <link rel="canonical" href="/help-doc/v001/">
+  <link rel="canonical" href="/help-doc/v001/jekyll/update/2015/06/25/welcome-to-jekyll.html">
   <link rel="alternate" type="application/rss+xml" title="Jekyll + lunrjs 测试站" href="/help-doc/v001/feed.xml" />
 </head>
 
@@ -59,78 +58,30 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">Welcome to Jekyll!</h1>
+    <p class="post-meta">Jun 25, 2015</p>
+  </header>
 
-  <div id="search">
-  <form action="/help-doc/v001/search" method="get">
-    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
-  </form>
-</div>
+  <article class="post-content">
+    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
-<section id="search-results" style="display: none;">
-  <p>Search results</p>
-  <div class="entries">
-  </div>
-</section>
+<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
+<p>Jekyll also offers powerful support for code snippets:</p>
 
-<script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="/help-doc/v001{{url}}">{{title}}</a>
-      </h3>
-    </article>
-  {{/entries}}
-</script>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
 
 
-<script src="/help-doc/v001/js/search.min.js" type="text/javascript" charset="utf-8"></script>
-
-<script type="text/javascript">
-  $(function() {
-    $('#search-query').lunrSearch({
-      indexUrl: '/help-doc/v001/js/index.json',   // Url for the .json file containing search index data
-      results : '#search-results',  // selector for containing search results element
-      entries : '.entries',         // selector for search entries containing element (contained within results above)
-      template: '#search-results-template'  // selector for Mustache.js template
-    });
-  });
-</script>
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jun 25, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/help-doc/v001/jekyll/update/2015/06/25/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 21, 2007</span>
-
-        <h2>
-          <a class="post-link" href="/help-doc/v001/2007/02/21/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%9C%B0%E4%BD%BF%E7%94%A8%E7%94%B5%E8%84%91%E5%92%8C%E7%BD%91%E7%BB%9C.html">如何高效地使用电脑和网络</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 30, 2006</span>
-
-        <h2>
-          <a class="post-link" href="/help-doc/v001/2006/05/30/note-taking-software-i-used.html">我用过的笔记管理软件</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/help-doc/v001/feed.xml">via RSS</a></p>
+  </article>
 
 </div>
 
